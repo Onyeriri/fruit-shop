@@ -1,0 +1,101 @@
+/* 
+google fonts used in this project
+font-family: 'Anton', sans-serif; h1
+font-family: 'Dosis', sans-serif; p
+font-family: 'Noto Serif', serif; h2
+ */
+
+/* css reset */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+div,
+blockquote,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+a,
+fieldset,
+input,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+body {
+  line-height: 1.5em;
+  font-size: 88%;
+  text-align: justify;
+  /* padding: 1em; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  padding: 0.6em 0;
+  text-transform: uppercase;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.floatLeft {
+  float: left;
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.floatRight {
+  float: right;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 320px) {..} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 600px) {
+  
+} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
