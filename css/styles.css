@@ -84,6 +84,131 @@ a:hover {
   padding: 0.5em 0 0.5em 0.5em;
 }
 
+/* header section css styles */
+.container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #131200;
+  color: #fff;
+  width: 100%;
+}
+
+header > h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  padding: 0 0.2em;
+}
+
+header p {
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+  padding: 0 0 1em 0;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.text-header {
+  margin: 2em 0;
+}
+
+/* main section css rules */
+section {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.fruit-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3em 0;
+}
+
+.img-container > span {
+  margin: 0.5em 0 0 0;
+  width: auto;
+  text-align: center;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.6em 0;
+  width: 6em;
+  border-radius: 10px;
+  color: #5da9e9;
+  border: 5px solid rgb(245, 236, 236);
+  background-color: rgb(245, 236, 236);
+  letter-spacing: 0.2em;
+  font-family: "Dosis", sans-serif;
+  font-weight: bolder;
+  font-size: 1.3em;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5da9e9;
+  border: 5px solid #5da9e9;
+  color: #eef5db;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.img-container {
+  margin: 0 0 1em 0;
+}
+
+/* footer section css rules */
+footer {
+  background-color: #131200;
+  width: 100%;
+  height: auto;
+  color: #fff;
+}
+
+footer > ul > li > a > i {
+  color: #fff;
+  cursor: pointer;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 0 0.6em 0;
+}
+
+.follow-us {
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 0.3em;
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 320px) {..} */
 
