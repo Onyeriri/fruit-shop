@@ -86,7 +86,7 @@ a:hover {
 
 /* header section css styles */
 .container {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -95,6 +95,7 @@ header {
   background-color: #131200;
   color: #fff;
   width: 100%;
+  padding: 1em 0;
 }
 
 header > h1 {
@@ -116,10 +117,6 @@ header p {
 h1,
 p {
   text-align: center;
-}
-
-.text-header {
-  margin: 2em 0;
 }
 
 /* main section css rules */
@@ -184,6 +181,7 @@ footer {
   width: 100%;
   height: auto;
   color: #fff;
+  margin: 0.5em 0 0 0;
 }
 
 footer > ul > li > a > i {
@@ -209,6 +207,72 @@ footer > ul {
   padding: 1em 0;
 }
 
+/* basket section of the code */
+#basket {
+  background-color: #545677;
+  padding: 1em;
+}
+
+#basket h2 {
+  text-align: center;
+  color: #fff;
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.3em;
+}
+
+/* .basket-heading {
+  display: none;
+} */
+
+/* using javascript to add class to div containing btn */
+.btnContainer {
+  background-color: red;
+  width: 80%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+/* using javascript to add class to add and delete btn */
+.btn-class {
+  width: 5em;
+  border: 3px solid gold;
+  border-radius: 8px;
+  background-color: gold;
+  cursor: pointer;
+}
+
+/* using javascript to add class to the li element */
+
+.li-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* using javascript to add class to the img element */
+.img-class {
+  width: 80%;
+}
+
+/* using javascript to add class to the h2 element  with show class*/
+.show {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.visible {
+  display: block;
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.3em;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+}
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 320px) {..} */
 
@@ -232,7 +296,7 @@ footer > ul {
   }
 
   header {
-    padding: 0.1em 0;
+    padding: 1em 0;
   }
 
   /* footer section of css rule */
@@ -243,7 +307,6 @@ footer > ul {
   /* main section css rule */
   .fruit-container {
     flex-direction: row;
-    /* background-color: red; */
     justify-content: space-between;
   }
 
@@ -254,6 +317,48 @@ footer > ul {
 
   .img-container {
     text-align: center;
+  }
+
+  /* using javascript to add class to div containing btn */
+  .btnContainer {
+    background-color: red;
+    width: 15%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  /* using javascript to add class to add and delete btn */
+  .btn-class {
+    width: 5em;
+    border: 3px solid gold;
+    border-radius: 8px;
+    background-color: gold;
+    cursor: pointer;
+  }
+
+  /* using javascript to add class to the li element */
+  .li-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* using javascript to add class to the img element */
+  .img-class {
+    width: 15%;
+  }
+
+  /* using javascript to add class to the h2 element  with show class*/
+  .show {
+    display: none;
+  }
+
+  .visible {
+    font-size: 1em;
+    display: block;
   }
 }
 

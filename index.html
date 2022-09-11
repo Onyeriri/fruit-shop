@@ -42,46 +42,65 @@
       <section>
         <div class="fruit-container">
           <div class="img-container">
-            <img src="/images/fruitcrown.jpeg" alt="Fruit crown" />
+            <img
+              id="crown-fruit"
+              src="/images/fruitcrown.jpeg"
+              alt="Fruit crown"
+            />
             <span>
-              <button class="btn">Add</button>
+              <button onclick="addFruit(event)" class="btn">Add</button>
             </span>
           </div>
           <div class="img-container">
-            <img src="/images/coconuts.001.jpeg" alt="coconuts" />
+            <img id="coconut" src="/images/coconuts.001.jpeg" alt="coconuts" />
             <span>
-              <button class="btn">Add</button>
+              <button onclick="addFruit(event)" class="btn">Add</button>
             </span>
           </div>
         </div>
         <div class="fruit-container">
           <div class="img-container">
-            <img src="/images/Kiwi.png" alt="Kiwi" />
+            <img id="kiwi" src="/images/Kiwi.png" alt="Kiwi" />
             <span>
-              <button class="btn">Add</button>
+              <button onclick="addFruit(event)" class="btn">Add</button>
             </span>
           </div>
           <div class="img-container">
-            <img src="/images/favicon.jpg" alt="Guava" />
+            <img id="sweet-melon" src="/images/favicon.jpg" alt="Sweet melon" />
             <span>
-              <button class="btn">Add</button>
+              <button onclick="addFruit(event)" class="btn">Add</button>
             </span>
           </div>
         </div>
         <div class="fruit-container">
           <div class="img-container">
-            <img src="/images/mango-png.png" alt="Mango" />
+            <img id="mango" src="/images/mango-png.png" alt="Mango" />
             <span>
-              <button class="btn">Add</button>
+              <button onclick="addFruit(event)" class="btn">Add</button>
             </span>
           </div>
           <div class="img-container">
-            <img src="/images/single-apricot-transparent.png" alt="Apricot" />
+            <img
+              id="apricot"
+              src="/images/single-apricot-transparent.png"
+              alt="Apricot"
+            />
             <span>
-              <button class="btn">Add</button>
+              <button onclick="addFruit(event)" class="btn">Add</button>
             </span>
           </div>
         </div>
+      </section>
+
+      <!-- Basket section of the page -->
+      <section id="basket">
+        <h2 id="text">Basket is empty</h2>
+
+        <h2 id="second-text" class="show">
+          Lists of fruits added to the basket
+        </h2>
+
+        <ul id="add-element"></ul>
       </section>
 
       <!-- footer section -->
@@ -111,5 +130,6 @@
         </ul>
       </footer>
     </div>
+    <script src="/script/script.js"></script>
   </body>
 </html>
