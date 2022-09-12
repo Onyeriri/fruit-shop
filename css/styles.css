@@ -273,6 +273,22 @@ footer > ul {
   margin-bottom: 1em;
   font-size: 0.8em;
 }
+
+#summary {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+}
+
+.size {
+  height: auto;
+  font-size: 1.1em;
+  font-family: "Noto Serif", serif;
+}
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 320px) {..} */
 
@@ -321,34 +337,12 @@ footer > ul {
 
   /* using javascript to add class to div containing btn */
   .btnContainer {
-    background-color: red;
-    width: 15%;
-    padding: 0.5em;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-  }
-
-  /* using javascript to add class to add and delete btn */
-  .btn-class {
-    width: 5em;
-    border: 3px solid gold;
-    border-radius: 8px;
-    background-color: gold;
-    cursor: pointer;
-  }
-
-  /* using javascript to add class to the li element */
-  .li-class {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 25%;
   }
 
   /* using javascript to add class to the img element */
   .img-class {
-    width: 15%;
+    width: 25%;
   }
 
   /* using javascript to add class to the h2 element  with show class*/
@@ -359,6 +353,14 @@ footer > ul {
   .visible {
     font-size: 1em;
     display: block;
+  }
+
+  #summary {
+    width: 25%;
+  }
+
+  .size {
+    font-size: 0.9em;
   }
 }
 
