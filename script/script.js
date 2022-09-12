@@ -17,9 +17,9 @@ const addFruit = (e) => {
   src.value = e.path[2].childNodes[1].src;
 
   basket[element].push(element);
-  check();
+  check((initial = 0));
   createElement(src, element);
-
+  totalNumberOfFruits(basket);
   console.log(basket);
 };
 
@@ -60,7 +60,8 @@ const createElement = (srcAttr, elementId) => {
     event.path[2].remove();
     let id = event.path[2].children[0].id;
     basket[id].pop(id);
-    check();
+    check((initial = 0));
+    totalNumberOfFruits(basket);
   });
 
   addButton.addEventListener("click", (event) => {
@@ -68,6 +69,7 @@ const createElement = (srcAttr, elementId) => {
     let id = event.path[2].children[0].id;
     basket[id].push(id);
     console.log(basket);
+    totalNumberOfFruits(basket);
   });
 
   li.appendChild(image);
@@ -76,10 +78,28 @@ const createElement = (srcAttr, elementId) => {
   ul.appendChild(li);
 };
 
+// checking for the numbers of fruit in the basket
+const totalNumberOfFruits = (basket) => {
+  let results = Object.values(basket);
+  let total = 0;
+
+  for (item of results) {
+    total += item.length;
+  }
+
+  check(total);
+};
+
 // check for fruit in the basket and display appropriate heading
-const check = () => {
+const check = (initial) => {
   const h2 = document.getElementById("text");
   const w2 = document.getElementById("second-text");
+
+  const summaryLetter = document.getElementById("summary-letter");
+
+  const summaryDigit = document.getElementById("summary-digit");
+
+  summaryDigit.innerHTML = initial;
 
   if (
     basket["apricot"].length ||
@@ -92,10 +112,42 @@ const check = () => {
     h2.classList.add("show");
     w2.classList.remove("show");
     w2.classList.add("block");
+    summaryLetter.classList.remove("show");
+    summaryLetter.classList.add("block");
+    summaryDigit.classList.remove("show");
+    summaryDigit.classList.add("block");
   } else {
     h2.classList.remove("show");
     h2.classList.add("block");
     w2.classList.remove("block");
     w2.classList.add("show");
+    summaryLetter.classList.add("show");
+    summaryLetter.classList.remove("block");
+    summaryDigit.classList.add("show");
+    summaryDigit.classList.remove("block");
   }
 };
+
+// delete all functionality
+// const deleteAll = (e) => {
+// const ul = document.getElementById("add-element");
+
+// let child = ul.lastElementChild;
+
+// console.log(e.path[2].children[2].children[2]);
+
+// while (child) {
+//   ul.removeChild(child);
+//   child = ul.lastElementChild;
+// }
+
+// Object.values(basket).map((value) => {
+//   console.log(value.pop());
+// });
+
+// for (let i = 0; i < basket.length; i++) {
+//   basket[i].pop();
+// }
+
+//   console.log(basket);
+// };
